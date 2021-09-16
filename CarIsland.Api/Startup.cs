@@ -98,6 +98,7 @@ namespace CarIsland.Api
             app.UseSwaggerUI(options =>
             {
                 options.SwaggerEndpoint("/swagger/v1/swagger.json", "Car Island Api v1");
+                options.RoutePrefix = string.Empty;
             });
 
             app.UseEndpoints(endpoints =>
