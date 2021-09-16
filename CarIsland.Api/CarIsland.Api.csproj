@@ -6,8 +6,16 @@
 
   <ItemGroup>
     <None Remove="Swashbuckle.AspNetCore" />
+    <None Remove="Microsoft.Identity.Web" />
+    <None Remove="Models\" />
+    <None Remove="Models\AuthorizationPolicies\" />
   </ItemGroup>
   <ItemGroup>
     <PackageReference Include="Swashbuckle.AspNetCore" Version="6.2.1" />
+    <PackageReference Include="Microsoft.Identity.Web" Version="1.16.1" />
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="Models\" />
+    <Folder Include="Models\AuthorizationPolicies\" />
   </ItemGroup>
 </Project>
